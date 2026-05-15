@@ -1,0 +1,8 @@
+{
+  "name": "Reservas RGP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "0c29f832"
+}
