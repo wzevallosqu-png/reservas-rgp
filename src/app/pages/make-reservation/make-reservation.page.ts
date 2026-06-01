@@ -5,20 +5,21 @@ import { IonicModule } from '@ionic/angular';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-new-user',
-  templateUrl: './new-user.page.html',
-  styleUrls: ['./new-user.page.scss'],
+  selector: 'app-make-reservation',
+  templateUrl: './make-reservation.page.html',
+  styleUrls: ['./make-reservation.page.scss'],
   standalone: true,
   imports: [CommonModule, FormsModule, IonicModule]
 })
-export class NewUserPage implements OnInit {
+export class MakeReservationPage implements OnInit {
 
   constructor(private router: Router) { }
 
   ngOnInit() {
   }
-
+  
   cancelar(){
     this.router.navigate(['/login']);
   }
+
 }

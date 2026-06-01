@@ -42,3 +42,15 @@
     align-items: center;
     height: 100%;
 }
+
+ion-button[color="dark"]{
+    text-transform: initial;
+}
+
+ion-content{
+    --background: var(--ion-color-success);
+}
+
+ion-label[position="floating"] {
+  margin-bottom: 10px !important;
+}

@@ -18,7 +18,11 @@ const routes: Routes = [
   {
     path: 'new-user',
     loadChildren: () => import('./pages/new-user/new-user.module').then( m => m.NewUserPageModule)
+  },  {
+    path: 'make-reservation',
+    loadChildren: () => import('./pages/make-reservation/make-reservation.module').then( m => m.MakeReservationPageModule)
   }
+
 
 
 ];
