@@ -21,6 +21,14 @@ const routes: Routes = [
   },  {
     path: 'make-reservation',
     loadChildren: () => import('./pages/make-reservation/make-reservation.module').then( m => m.MakeReservationPageModule)
+  },
+  {
+    path: 'select-menu',
+    loadChildren: () => import('./pages/select-menu/select-menu.module').then( m => m.SelectMenuPageModule)
+  },
+  {
+    path: 'reservation-list',
+    loadChildren: () => import('./pages/reservation-list/reservation-list.module').then( m => m.ReservationListPageModule)
   }
 
 

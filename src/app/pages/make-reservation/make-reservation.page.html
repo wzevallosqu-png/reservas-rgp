@@ -7,17 +7,20 @@
       <ion-card-content>
         <ion-item>
           <ion-label position="floating">Día</ion-label>
-          <ion-input type="date"></ion-input>
+          <ion-input type="date"
+          [(ngModel)]="reserva.fechaReserva"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label position="floating">Hora</ion-label>
-          <ion-input type="time"></ion-input>
+          <ion-input type="time"
+          [(ngModel)]="reserva.horaReserva"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label position="floating">Cantidad de personas</ion-label>
-          <ion-input type="number"></ion-input>
+          <ion-input type="number"
+          [(ngModel)]="reserva.cantidadPersonas"></ion-input>
         </ion-item>
-        <ion-button color="success" size="full">Entrar</ion-button>
+        <ion-button color="success" size="full" (click)="reservar()">Reservar</ion-button>
         <ion-button color="success" fill="clear" size="full" (click)="cancelar()">Cancelar</ion-button>
       </ion-card-content>
     </ion-card>

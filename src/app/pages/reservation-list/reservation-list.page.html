@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true">
+  <div class="flex-center">
+    <ion-card style="width: 90%;">
+      <ion-card-header>
+        <ion-card-title color="success">Reservas</ion-card-title>
+      </ion-card-header>
+      <ion-list *ngIf="reservas.length > 0">
+        <ion-item *ngFor="let reserva of reservas">
+          <ion-label>
+            <h2>
+              {{ reserva.fechaReserva | date:'dd/MM/yyyy'  + ' - ' + reserva.horaReserva }}
+            </h2>
+            <p>
+              Cantidad: {{ reserva.cantidadPersonas }}
+            </p>
+            <p>
+              Estado: {{ reserva.estadoReserva }}
+            </p>
+          </ion-label>
+        </ion-item>
+      </ion-list>    
+      <ion-button color="success" fill="clear" size="full" (click)="salir()">Salir</ion-button>
+    </ion-card>
+  </div>
+</ion-content>

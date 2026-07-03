@@ -1,0 +1,20 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
+import { IonicModule } from '@ionic/angular';
+
+import { SelectMenuPageRoutingModule } from './select-menu-routing.module';
+
+import { SelectMenuPage } from './select-menu.page';
+
+@NgModule({
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    SelectMenuPageRoutingModule,
+    SelectMenuPage
+  ],
+})
+export class SelectMenuPageModule {}

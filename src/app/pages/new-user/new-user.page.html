@@ -5,32 +5,34 @@
         <ion-card-title color="success">Registrarse</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <ion-item>
-          <ion-label position="floating">Correo Electrónico</ion-label>
-          <ion-input type="email"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label position="floating">Contraseña</ion-label>
-          <ion-input type="password"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label position="floating">Nombres</ion-label>
-          <ion-input type="text"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label position="floating">Telefono</ion-label>
-          <ion-input type="text"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label position="floating">Dirección</ion-label>
-          <ion-input type="text"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label position="floating">Nro. de Documento</ion-label>
-          <ion-input type="text"></ion-input>
-        </ion-item>
-        <ion-button color="success" size="full">Entrar</ion-button>
-        <ion-button color="success" fill="clear" size="full" (click)="cancelar()">Cancelar</ion-button>
+        <form [formGroup]="configurationForm">
+          <ion-item>
+            <ion-label position="floating">Correo Electrónico</ion-label>
+            <ion-input type="email" formControlName="correoElectronico"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input type="password" formControlName="clave"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Nombres</ion-label>
+            <ion-input type="text" formControlName="nombres"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Telefono</ion-label>
+            <ion-input type="text" formControlName="telefono"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Dirección</ion-label>
+            <ion-input type="text" formControlName="direccion"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Nro. de Documento</ion-label>
+            <ion-input type="text" formControlName="numeroDocumento"></ion-input>
+          </ion-item>
+          <ion-button color="success" size="full" (click)="registrar()">Entrar</ion-button>
+          <ion-button color="success" fill="clear" size="full" (click)="cancelar()">Cancelar</ion-button>
+        </form>
       </ion-card-content>
     </ion-card>
   </div>
